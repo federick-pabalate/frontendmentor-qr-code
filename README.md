@@ -1,0 +1,94 @@
+# Frontend Mentor - QR code component solution
+
+This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+## Table of contents
+
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+
+**Note: Delete this note and update the table of contents based on what sections you keep.**
+
+## Overview
+
+### Screenshot
+
+![](./screenshot.png)
+
+### Links
+
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+## My process
+
+### Built with
+
+- HTML
+- CSS custom properties
+- Flexbox
+- CSS Grid
+
+### What I learned
+
+I've been learning HTML and CSS through the challenge. Use assets from design to structure in HTML. In CSS, I discovered the grid for grid-based layout for the challenge using rows and columns. Separating main and attribution content in each of the rows. Flexbox makes it easier to structure items within a container.
+
+What I learned is
+
+To see how you can add code snippets, see below:
+
+```html
+<h1>Some HTML code I'm proud of</h1>
+```
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 10%; /* set 2 rows */
+  grid-template-areas:
+    "main"
+    "attribution";
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+  place-items: center; /* center content */
+}
+
+@media only screen and (max-width: 375px) {
+  /* CSS rules to apply when the screen width is 375px or less */
+  .card {
+    width: 90%;
+  }
+
+  .card-img {
+    width: 100%;
+    height: auto;
+  }
+}
+```
+
+### Continued development
+
+Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+
+In my future project I'll give my time to myself to learn more about how responsive websites work by using Grid and Flexbox before learning CSS frameworks to further deepen my fundamentals in CSS.
+
+**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+
+### Useful resources
+
+- [CSS Flexbox Layout Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This helped me for achieve column layout for the items in my qr code component card.
+- [CSS Grid layout - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) - This is an amazing documentation which helped me finally understand how grid works. I'd recommend it to anyone still learning this concept.
+
+## Author
+
+- Frontend Mentor - [https://www.frontendmentor.io/profile/federick-pabalate](https://www.frontendmentor.io/profile/federick-pabalate)
+- Github - [https://github.com/federick-pabalate](https://github.com/federick-pabalate)

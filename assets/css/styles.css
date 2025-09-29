@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(212, 45%, 89%);
+}
+
+/** Font weights */
+.light-text {
+  font-weight: 400;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+/** Text colors */
+.text-slate-900 {
+  color: hsl(218, 44%, 22%);
+}
+
+/** Container layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 10%;
+  grid-template-areas:
+    "main"
+    "attribution";
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+  place-items: center;
+}
+
+/** Card layout */
+.card {
+  background-color: hsl(0, 0%, 100%);
+  grid-area: "main";
+  width: 320px;
+  padding: 16px 16px 40px 16px;
+  border-radius: 20px;
+  text-align: center;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/** Card content */
+.card-img {
+  width: 288px;
+  height: 288px;
+  border-radius: 10px;
+}
+
+.card-title {
+  margin-top: 24px;
+  font-size: 22px;
+}
+
+.card-description {
+  font-size: 15px;
+  color: hsl(216, 15%, 48%);
+}
+
+.card h1,
+.card p {
+  padding: 0 16px 0px 16px;
+}
+
+/** Attribution layout */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+    width: 90%;
+  }
+
+  .card-img {
+    width: 100%;
+    height: auto;
+  }
+}
